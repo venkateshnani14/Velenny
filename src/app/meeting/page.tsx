@@ -14,7 +14,7 @@ const page = () => {
     const [isLoading,setIsLoading] = useState(false);
     const [joinLoading,setJoinLoading] = useState(false);
   return (
-    <div className=" bg-gradient-to-br from-sky-300 to-teal-300 h-[100vh] w-[100vw]">
+    <div className="bg-gradient-to-br from-sky-300 to-teal-300 h-[100vh] w-[100vw]">
         <div className="">
             <p className="text-black text-4xl font-extrabold p-2">Velenny</p>
         </div>

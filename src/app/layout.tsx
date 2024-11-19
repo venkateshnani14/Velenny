@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { BrowserRouter } from "react-router-dom";
+import { GoogleOAuthProvider } from "@react-oauth/google";
 
 export const metadata: Metadata = {
   title: "Next App",
@@ -15,8 +15,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
+        <GoogleOAuthProvider clientId='677636272319-pm4dg5t7aj6f40achecapj0e4g196503.apps.googleusercontent.com'>
         <div>{children}</div>
         <div>{management}</div>
+        </GoogleOAuthProvider>
       </body>
     </html>
   );
